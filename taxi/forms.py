@@ -17,9 +17,9 @@ class LicenseNumberValidationMixin:
             or not license_number[3:].isdigit()
         ):
             raise ValidationError(
-                "Ensure that value is consist only of 8 characters: "
-                "first 3 characters are uppercase letters, "
-                "last 5 characters are digits"
+                "Ensure that the license number consist of "
+                "8 characters: first 3 characters are uppercase letters, "
+                "last 5 characters are digits."
             )
 
         return license_number
